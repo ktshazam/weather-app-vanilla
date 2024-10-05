@@ -28,7 +28,7 @@ a:visited {
 
 footer {
   border-top: 1px solid #f7f5fc;
-  padding: 30px;
+  padding-top: 25px;
   color: #a8a7b4;
   font-size: 14px;
   text-align: center;
@@ -44,10 +44,10 @@ footer {
 }
 
 .city-search {
+  width: 90%;
 }
 
 .search-input {
-  width: 300px;
   height: 35px;
   border: 1px solid #f7f5fc;
   border-radius: 5px;
@@ -62,6 +62,9 @@ footer {
   color: #ffffff;
   font-weight: 800;
   border-radius: 5px;
-  width: 100px;
   height: 35px;
+}
+
+.main {
+  color: #a8a7b4;
 }
