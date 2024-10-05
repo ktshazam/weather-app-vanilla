@@ -6,33 +6,65 @@
     <title>Weather App</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <h1>Paris</h1>
-      <p>
-        Tuesday 14:49, scattered clouds
-        <br />
-        Humidity: 66%, Wind: 3.13km/h
-      </p>
-    </main>
-
-    <footer>
-      This project was coded by
-      <a href="https://github.com/ktshazam" target="_blank">Katie Chisholm</a>
-      is
-      <a href="https://github.com/ktshazam/weather-app-vanilla" target="_blank"
-        >open-sourced on GitHub</a
-      >
-      and
-      <a href="https://ktshazam-weather-app-vanilla.netlify.app" target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
+    <div class="container">
+      <div class="header">
+        <header>
+          <form>
+            <input type="search" placeholder="Enter a city..." required />
+            <input type="submit" value="Search" />
+          </form>
+        </header>
+      </div>
+      <div>
+        <main>
+          <div class="local-weather">
+            <div class="row">
+              <div class="col">
+                <h1><span class="local-city">Paris</span></h1>
+                <p>
+                  <span class="local-weekday">Tuesday</span>
+                  <span class="local-time">14:49</span>,
+                  <span class="local-weather">scattered clouds</span>
+                  <br />
+                  Humidity: <span class="local-humidity">66%</span>, Wind:
+                  <span class="local-wind">3.13</span>km/h
+                </p>
+              </div>
+              <div class="col">
+                <div class="local-forecast">
+                  <p>
+                    <span class="local-image"></span>
+                    <span class="local-temperature">23</span>
+                    <span class="degrees">°</span>
+                    <span class="local-unit">C</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="footer">
+        <footer>
+          This project was coded by
+          <a href="https://github.com/ktshazam" target="_blank"
+            >Katie Chisholm</a
+          >
+          is
+          <a
+            href="https://github.com/ktshazam/weather-app-vanilla"
+            target="_blank"
+            >open-sourced on GitHub</a
+          >
+          and
+          <a
+            href="https://ktshazam-weather-app-vanilla.netlify.app"
+            target="_blank"
+            >hosted on Netlify</a
+          >
+        </footer>
+      </div>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
